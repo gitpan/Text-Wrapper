@@ -1,4 +1,4 @@
-Text::Wrapper 0.007
+Text::Wrapper 0.008
 Copyright 1998 Christopher J. Madsen
 
 DESCRIPTION
@@ -19,6 +19,13 @@ DESCRIPTION
 
     In short, Text::Wrapper is the object-oriented equivalent of
     Text::Wrap, but with fewer bugs (I hope).
+
+    Text::Wrapper requires Perl 5.004 or later.
+
+RECENT CHANGES
+
+    Version 0.008 corrects a bug that caused an infinite loop if a
+    word was too long to fit on a single line.
 
 LICENSE
 
