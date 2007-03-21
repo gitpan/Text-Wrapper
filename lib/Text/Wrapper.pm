@@ -3,9 +3,9 @@ package Text::Wrapper;
 #
 # Copyright 1998 Christopher J. Madsen
 #
-# Author: Christopher J. Madsen <chris_madsen@geocities.com>
+# Author: Christopher J. Madsen <perl@cjmweb.net>
 # Created: 06 Mar 1998
-# Version: 1.000 (27-Oct-1998)
+# $Id: Wrapper.pm 1710 2007-03-21 23:36:41Z cjm $
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the same terms as Perl itself.
@@ -28,8 +28,7 @@ use vars qw($AUTOLOAD $VERSION);
 
 BEGIN
 {
-    # Convert RCS revision number to d.ddd format:
-    $VERSION = sprintf('%d.%03d', '1.000 ' =~ /(\d+)\.(\d+)/);
+    $VERSION = '1.01';
 } # end BEGIN
 
 #=====================================================================
@@ -133,7 +132,7 @@ Text::Wrapper - Simple word wrapping routine
 B<Text::Wrapper> provides simple word wrapping.  It breaks long lines,
 but does not alter spacing or remove existing line breaks.  If you're
 looking for more sophisticated text formatting, try the
-B<Text::Format> module.
+L<Text::Format> module.
 
 Reasons to use B<Text::Wrapper> instead of B<Text::Format>:
 
@@ -184,18 +183,29 @@ If omitted, just returns the current value.
 
 Returns a word wrapped copy of C<$text>.  The original is not altered.
 
+=back
+
 =head1 BUGS
 
 Does not handle tabs (they're treated just like spaces).
 
 Does not break words that can't fit on one line.
 
+=head1 LICENSE
+
+Text::Wrapper is distributed under the same terms as Perl itself.
+
+This means it is distributed in the hope that it will be useful, but
+I<without any warranty>; without even the implied warranty of
+I<merchantability> or I<fitness for a particular purpose>.  See the
+GNU General Public License or the Artistic License for more details.
+
 =head1 AUTHOR
 
-Christopher J. Madsen E<lt>F<chris_madsen@geocities.com>E<gt>
+Christopher J. Madsen E<lt>F<perl AT cjmweb.net>E<gt>
+
+Please send bug reports to F<bug-Text-Wrapper AT rt.cpan.org>, or
+use the web interface at
+L<http://rt.cpan.org/Public/Bug/Report.html?Queue=Text-Wrapper>
 
 =cut
-
-# Local Variables:
-# tmtrack-file-task: "Text::Wrapper.pm"
-# End:
