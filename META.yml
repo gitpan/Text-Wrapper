@@ -1,8 +1,8 @@
 ---
 name: Text-Wrapper
-version: 1.01
+version: 1.02
 author:
-  - Christopher J. Madsen <perl@cjmweb.net>
+  - 'Christopher J. Madsen <perl@cjmweb.net>'
 abstract: Simple word wrapping routine
 license: perl
 resources:
@@ -18,8 +18,11 @@ dynamic_config: 0
 provides:
   Text::Wrapper:
     file: lib/Text/Wrapper.pm
-    version: 1.01
-generated_by: Module::Build version 0.2805
+    version: 1.02
+generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
+no_index:
+  directory:
+    - tools

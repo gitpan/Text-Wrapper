@@ -1,4 +1,6 @@
-Text::Wrapper version 1.02, released May 10, 2008
+[% # $Id: README.tt 2010 2008-05-10 18:36:53Z cjm $ %]
+Text::Wrapper version [%version%], released [%date%]
+
 Copyright 1998 Christopher J. Madsen
 
 DESCRIPTION
@@ -24,12 +26,10 @@ DESCRIPTION
 
 RECENT CHANGES
 
-    Here's what's new in version 1.02 of Text::Wrapper:
+    Here's what's new in version [%version%] of Text::Wrapper:
     (See the file "Changes" for the full revision history.)
 
-	- no functional changes
-	- minor clean up to documentation
-	- use Module::Build::DistVersion for packaging
+[%changes%]
 
 LICENSE
 
