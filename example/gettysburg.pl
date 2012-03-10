@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 #---------------------------------------------------------------------
-# $Id: gettysburg.pl 1708 2007-03-21 04:57:40Z cjm $
+# gettysburg.pl
 # Copyright 2007 Christopher J. Madsen
 #
 # Example of using the Text::Wrapper module
