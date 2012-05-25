@@ -1,4 +1,4 @@
-Text::Wrapper version 1.03, released March 10, 2012
+Text::Wrapper version 1.04, released May 25, 2012
 
 
     This module provides simple word wrapping.  It breaks long lines,
@@ -35,20 +35,17 @@ DEPENDENCIES
 
   Package Minimum Version
   ------- ---------------
-  perl     5.010
+  perl     5.008
   Carp
 
 
 
 CHANGES
-    Here's what's new in version 1.03 of Text::Wrapper:
+    Here's what's new in version 1.04 of Text::Wrapper:
     (See the file "Changes" for the full revision history.)
 
-	- add the wrap_after attribute
-	- now requires Perl 5.10.0 or later
-	- explicitly supports U+2000 - U+200B as breaking spaces
-	- now built with Dist::Zilla (includes v2 META.json)
-	- repository now publicly available on GitHub
+	- restore compatibility with Perl 5.8.0 (RT#77386)
+	  patch provided by Thomas Sibley
 
 
 

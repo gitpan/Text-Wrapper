@@ -17,7 +17,7 @@ package Text::Wrapper;
 # ABSTRACT: Word wrap text by breaking long lines
 #---------------------------------------------------------------------
 
-use 5.010;
+use 5.008;
 use strict;
 use warnings;
 
@@ -26,8 +26,8 @@ use Carp qw(croak);
 #=====================================================================
 # Package Global Variables:
 
-our $VERSION = '1.03';
-# This file is part of Text-Wrapper 1.03 (March 10, 2012)
+our $VERSION = '1.04';
+# This file is part of Text-Wrapper 1.04 (May 25, 2012)
 our $AUTOLOAD;
 
 #=====================================================================
@@ -84,7 +84,7 @@ sub wrap_after
 
   if (@_) {
     $self->{_wrapRE} = $self->_build_wrap_re(
-      $self->{wrapAfter} = shift // ''
+      $self->{wrapAfter} = shift
     );
   }
 
@@ -98,6 +98,7 @@ our $hWS = ' \t\r\x{2000}-\x{200B}';
 sub _build_wrap_re
 {
   my ($self, $chars) = @_;
+  $chars = '' unless defined $chars;
 
   return $_wrap_re_cache{$chars} ||= do {
     if (length $chars) {
@@ -168,8 +169,8 @@ Text::Wrapper - Word wrap text by breaking long lines
 
 =head1 VERSION
 
-This document describes version 1.03 of
-Text::Wrapper, released March 10, 2012.
+This document describes version 1.04 of
+Text::Wrapper, released May 25, 2012.
 
 =head1 SYNOPSIS
 
