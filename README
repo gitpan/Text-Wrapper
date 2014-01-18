@@ -1,4 +1,4 @@
-Text::Wrapper version 1.04, released May 25, 2012
+Text::Wrapper version 1.05, released January 18, 2014
 
 
     This module provides simple word wrapping.  It breaks long lines,
@@ -35,23 +35,23 @@ DEPENDENCIES
 
   Package Minimum Version
   ------- ---------------
-  perl     5.008
+  perl     5.8.0
   Carp
 
 
 
 CHANGES
-    Here's what's new in version 1.04 of Text::Wrapper:
+    Here's what's new in version 1.05 of Text::Wrapper:
     (See the file "Changes" for the full revision history.)
 
-	- restore compatibility with Perl 5.8.0 (RT#77386)
-	  patch provided by Thomas Sibley
+	- no functional changes
+	- additional tests showing all possible breakpoints
 
 
 
 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Christopher J. Madsen.
+This software is copyright (c) 2014 by Christopher J. Madsen.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

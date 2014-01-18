@@ -26,8 +26,8 @@ use Carp qw(croak);
 #=====================================================================
 # Package Global Variables:
 
-our $VERSION = '1.04';
-# This file is part of Text-Wrapper 1.04 (May 25, 2012)
+our $VERSION = '1.05';
+# This file is part of Text-Wrapper 1.05 (January 18, 2014)
 our $AUTOLOAD;
 
 #=====================================================================
@@ -169,8 +169,8 @@ Text::Wrapper - Word wrap text by breaking long lines
 
 =head1 VERSION
 
-This document describes version 1.04 of
-Text::Wrapper, released May 25, 2012.
+This document describes version 1.05 of
+Text::Wrapper, released January 18, 2014.
 
 =head1 SYNOPSIS
 
@@ -272,11 +272,11 @@ or through the web interface at
 L<< http://rt.cpan.org/Public/Bug/Report.html?Queue=Text-Wrapper >>.
 
 You can follow or contribute to Text-Wrapper's development at
-L<< http://github.com/madsen/text-wrapper >>.
+L<< https://github.com/madsen/text-wrapper >>.
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Christopher J. Madsen.
+This software is copyright (c) 2014 by Christopher J. Madsen.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
